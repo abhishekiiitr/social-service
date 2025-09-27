@@ -1,0 +1,266 @@
+/* Professional Footer */
+.professional-footer {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 20px 30px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.company-section h3, .contact-section h4, .trust-section h4 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.footer-logo {
+  width: 45px;
+  height: 45px;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.footer-logo svg {
+  width: 100%;
+  height: 100%;
+  color: #60a5fa;
+}
+
+.company-brand h3 {
+  margin: 8px 0;
+  font-size: 1.5rem;
+}
+
+.company-brand p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.areas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.area-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.area-item span:first-child {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.area-item span:first-child svg {
+  width: 100%;
+  height: 100%;
+  color: #60a5fa;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+}
+
+.contact-item span:first-child {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.contact-item span:first-child svg {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-item.phone span:first-child svg {
+  color: #ef4444;
+}
+
+.contact-item.whatsapp span:first-child svg {
+  color: #22c55e;
+}
+
+.contact-item.email span:first-child svg {
+  color: #60a5fa;
+}
+
+.contact-item div strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.contact-item div p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cbd5e1;
+}
+
+.trust-points {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.trust-point {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.trust-point span:first-child {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.trust-point span:first-child svg {
+  width: 100%;
+  height: 100%;
+  color: #fbbf24;
+}
+
+.footer-bottom {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Enhanced Mobile Responsive Design */
+
+/* Extra Small Devices - 320px to 374px */
+@media (max-width: 374px) {
+  .footer-content {
+    padding: 30px 10px 15px 10px;
+    gap: 25px;
+    grid-template-columns: 1fr;
+  }
+  
+  .company-section h3, .contact-section h4, .trust-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-logo {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .company-brand h3 {
+    font-size: 1.2rem;
+  }
+  
+  .company-brand p {
+    font-size: 0.9rem;
+  }
+  
+  .contact-item {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+  
+  .trust-point {
+    font-size: 0.85rem;
+  }
+  
+  .footer-bottom {
+    padding: 15px 10px;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small Devices - 375px to 413px */
+@media (min-width: 375px) and (max-width: 413px) {
+  .footer-content {
+    padding: 35px 15px 20px 15px;
+    gap: 28px;
+  }
+  
+  .company-brand h3 {
+    font-size: 1.3rem;
+  }
+  
+  .contact-item {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Medium Mobile Devices - 414px to 767px */
+@media (min-width: 414px) and (max-width: 767px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+/* General Mobile - Up to 768px */
+@media (max-width: 768px) {
+  .footer-content {
+    padding: 40px 15px 20px 15px;
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-item {
+    padding: 12px;
+  }
+  
+  .footer-bottom {
+    padding: 18px 15px;
+  }
+}
+
+/* Tablet Portrait - 769px to 991px */
+@media (min-width: 769px) and (max-width: 991px) {
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+}

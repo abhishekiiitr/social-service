@@ -1,0 +1,85 @@
+<footer class="professional-footer">
+	<div class="footer-content">
+		<!-- Company Info Section -->
+		<div class="company-section">
+			<div class="company-brand">
+				<span class="footer-logo" [innerHTML]="icons['logo']"></span>
+				<h3>AquaCare Lucknow</h3>
+				<p>Your Trusted Water Purifier Service Partner</p>
+			</div>
+			<div class="service-areas">
+				<h4>Service Coverage</h4>
+				<div class="areas-list">
+					<div class="area-item">
+						<span [innerHTML]="icons['location']"></span>
+						<span>Gomti Nagar, Hazratganj, Indira Nagar</span>
+					</div>
+					<div class="area-item">
+						<span [innerHTML]="icons['location']"></span>
+						<span>Aliganj, Mahanagar, Chinhat</span>
+					</div>
+					<div class="area-item">
+						<span [innerHTML]="icons['location']"></span>
+						<span>Prayagraj - Civil Lines, Katra</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Contact Section -->
+		<div class="contact-section">
+			<h4>Get In Touch</h4>
+			<div class="contact-methods">
+				<a href="tel:{{contact.phone}}" class="contact-item phone">
+					<span [innerHTML]="icons['phone']"></span>
+					<div>
+						<strong>Call Us</strong>
+						<p>{{contact.phone}}</p>
+					</div>
+				</a>
+				<a href="https://wa.me/{{contact.whatsapp}}" target="_blank" class="contact-item whatsapp">
+					<span [innerHTML]="icons['whatsapp']"></span>
+					<div>
+						<strong>WhatsApp</strong>
+						<p>Quick Response</p>
+					</div>
+				</a>
+				<a href="mailto:{{contact.email}}" class="contact-item email">
+					<span [innerHTML]="icons['email']"></span>
+					<div>
+						<strong>Email</strong>
+						<p>{{contact.email}}</p>
+					</div>
+				</a>
+			</div>
+		</div>
+
+		<!-- Trust Signals Section -->
+		<div class="trust-section">
+			<h4>Why Choose Us</h4>
+			<div class="trust-points">
+				<div class="trust-point">
+					<span [innerHTML]="icons['verified']"></span>
+					<span>Certified Engineers</span>
+				</div>
+				<div class="trust-point">
+					<span [innerHTML]="icons['star']"></span>
+					<span>10,000+ Happy Customers</span>
+				</div>
+				<div class="trust-point">
+					<span [innerHTML]="icons['verified']"></span>
+					<span>100% Genuine Parts</span>
+				</div>
+				<div class="trust-point">
+					<span [innerHTML]="icons['star']"></span>
+					<span>Same Day Service</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Bottom Bar -->
+	<div class="footer-bottom">
+		<p>&copy; 2025 RO Service Center. All rights reserved. | Professional RO & Water Filter Service in Lucknow & Prayagraj</p>
+	</div>
+</footer>

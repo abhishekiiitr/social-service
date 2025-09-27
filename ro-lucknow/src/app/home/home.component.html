@@ -1,0 +1,143 @@
+<!-- Hero Section -->
+<div class="hero">
+  <h1>Professional Water Purifier Service in Lucknow</h1>
+  <p class="hero-subtitle">Same-Day RO Repair & Installation Service Across Lucknow & Prayagraj</p>
+  <div class="trust-signals">
+    <span class="trusted">✓ 500+ Happy Customers</span>
+    <span class="verified">✓ Skilled Technicians</span>
+    <span class="experienced">✓ 7+ Years Experience</span>
+  </div>
+  <div class="hero-actions">
+    <a href="https://wa.me/{{contact.whatsapp}}" target="_blank" class="action-btn whatsapp-btn">
+      <span [innerHTML]="icons['whatsapp']"></span>
+      WhatsApp Now
+    </a>
+    <a href="tel:{{contact.phone}}" class="action-btn call-btn">
+      <span [innerHTML]="icons['phone']"></span>
+      Call: {{contact.phone}}
+    </a>
+  </div>
+</div>
+
+<!-- Our Services Section -->
+<section class="services-section">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-icon" [innerHTML]="icons['ro']"></div>
+      <h3>RO Service & Repair</h3>
+      <p>Complete RO system service, repair, and maintenance</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon" [innerHTML]="icons['filter']"></div>
+      <h3>Water Filter Service</h3>
+      <p>All types of water filter cleaning and replacement</p>
+    </div>
+    <div class="service-card">
+      <div class="service-icon" [innerHTML]="icons['ac']"></div>
+      <h3>AC Service</h3>
+      <p>AC installation, service, and repair by experts</p>
+    </div>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">
+  <h2>How It Works</h2>
+  <div class="steps-grid">
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-icon" [innerHTML]="icons['phone']"></div>
+      <h3>Call or WhatsApp</h3>
+      <p>Contact us for instant service booking</p>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-icon" [innerHTML]="icons['engineer']"></div>
+      <h3>Expert Arrives</h3>
+      <p>Certified technician visits at your convenience</p>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-icon" [innerHTML]="icons['verified']"></div>
+      <h3>Service Complete</h3>
+      <p>Quick, reliable service with warranty</p>
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section class="why-choose-us">
+  <h2>Why Choose Us?</h2>
+  <div class="benefits-grid">
+    <div class="benefit-item">
+      <div class="benefit-icon" [innerHTML]="icons['verified']"></div>
+      <span>Certified & Experienced Engineers</span>
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-icon" [innerHTML]="icons['star']"></div>
+      <span>1,000+ Happy Customers</span>
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-icon" [innerHTML]="icons['phone']"></div>
+      <span>Quick Response & Same Day Service</span>
+    </div>
+    <div class="benefit-item">
+      <div class="benefit-icon" [innerHTML]="icons['verified']"></div>
+      <span>100% Genuine Parts & Warranty</span>
+    </div>
+  </div>
+</section>
+
+<!-- Service Locations -->
+<section class="service-locations">
+  <h2>Service Areas</h2>
+  <div class="locations-grid">
+    <div class="location-card">
+      <div class="location-icon" [innerHTML]="icons['location']"></div>
+      <h3>Lucknow</h3>
+      <p>All areas covered with fast service</p>
+    </div>
+    <div class="location-card">
+      <div class="location-icon" [innerHTML]="icons['location']"></div>
+      <h3>Prayagraj</h3>
+      <p>Complete city coverage available</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Form -->
+<section class="contact-section">
+  <h2>Request Service</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name *" required />
+    <input type="tel" placeholder="Phone Number *" required />
+    <select required>
+      <option value="">Select Service *</option>
+      <option value="ro">RO Service</option>
+      <option value="filter">Water Filter</option>
+      <option value="ac">AC Service</option>
+    </select>
+    <textarea placeholder="Describe your problem (optional)"></textarea>
+    <button type="submit" class="submit-btn">
+      <span [innerHTML]="icons['phone']"></span>
+      Request Service Call
+    </button>
+  </form>
+  
+  <!-- Emergency Contact -->
+  <div class="emergency-contact">
+    <p><strong>Need Immediate Service?</strong></p>
+    <div class="emergency-actions">
+      <a href="tel:{{contact.phone}}" class="emergency-btn">
+        <span [innerHTML]="icons['phone']"></span>
+        Call Now: {{contact.phone}}
+      </a>
+      <a href="https://wa.me/{{contact.whatsapp}}" target="_blank" class="emergency-btn whatsapp">
+        <span [innerHTML]="icons['whatsapp']"></span>
+        WhatsApp Now
+      </a>
+    </div>
+  </div>
+</section>
+
